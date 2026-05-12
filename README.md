@@ -2,22 +2,6 @@
 
 Automated end-to-end testing framework for the Axis Max Life Insurance premium calculator portal. This tool processes test data from Excel, fills multi-step insurance forms, downloads Benefit Illustration PDFs, extracts policy details, and generates comprehensive test reports.
 
-## 📋 Table of Contents
-
-- [Overview](#overview)
-- [Features](#features)
-- [Project Structure](#project-structure)
-- [Prerequisites](#prerequisites)
-- [Installation](#installation)
-- [Configuration](#configuration)
-- [Usage](#usage)
-- [Test Data Format](#test-data-format)
-- [Output](#output)
-- [Portal Flow](#portal-flow)
-- [Troubleshooting](#troubleshooting)
-- [Recent Fixes](#recent-fixes)
-- [Contributing](#contributing)
-
 ## 🎯 Overview
 
 This automation framework streamlines the testing of the Axis Max Life Insurance premium calculator by:
@@ -35,7 +19,6 @@ This automation framework streamlines the testing of the Axis Max Life Insurance
 - **PDF Processing**: Automatic download and data extraction from Benefit Illustration PDFs
 - **Data Validation**: Compares portal values with PDF values for accuracy
 - **Comprehensive Reporting**: Generates both CSV and Excel reports with test results
-- **Screenshot Capture**: Automatic screenshots on errors for debugging
 - **Robust Error Handling**: Retry logic and fallback strategies for reliability
 
 ### Advanced Features
