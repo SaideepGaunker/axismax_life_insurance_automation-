@@ -54,17 +54,14 @@ This automation framework streamlines the testing of the Axis Max Life Insurance
 watermellon/
 ├── axis_max_life_automation.py    # Main automation script
 ├── check_excel.py                 # Excel data validation utility
-├── test_parse.py                  # Life cover parsing test utility
 ├── README.md                      # This file
-├── FIXES_APPLIED.md              # Detailed fix documentation
-├── implementation_plan.md         # Technical implementation details
 ├── test data/
 │   └── insurance_test_data.xlsx  # Test data spreadsheet
 ├── downloads/                     # PDF downloads directory
 │   ├── BI-7762SKXG.pdf
 │   └── BI-8250WXFI.pdf
-├── screenshots/                   # Error screenshots
-│   └── error_tc1_*.png
+├── plan&automation_flow/                   
+│   └── implementation_plan.md         # Technical implementation details
 └── test_results/                  # Generated reports
     ├── report_20260511_153842.csv
     └── report_20260511_153842.xlsx
@@ -248,15 +245,6 @@ TC2,Manish Menon,BI-8250WXFI,₹18,456,Match
 | Premium | Monthly/annual premium amount |
 | PDF Match Status | Match/Mismatch/Not Available |
 
-### Screenshots
-
-Error screenshots are saved to `screenshots/` with naming pattern:
-```
-error_tc{N}_{Name}_{HHMMSS}.png
-```
-
-Example: `error_tc1_Vikram_Banerjee_112207.png`
-
 ### Downloaded PDFs
 
 Benefit Illustration PDFs are saved to `downloads/` with naming pattern:
@@ -406,7 +394,6 @@ Major improvements for multi-row test execution:
 - ✅ All 6 test cases now execute successfully
 - ✅ Robust button clicking with 3-tier fallback strategy
 - ✅ Enhanced error handling and logging
-- ✅ Screenshot capture at failure points
 - ✅ Verification of page state after navigation
 
 See `FIXES_APPLIED.md` for complete details.
@@ -433,17 +420,6 @@ The script provides detailed console output:
 - `WARNING`: Fallback strategies and retries
 - `ERROR`: Failures and exceptions
 
-## 🤝 Contributing
-
-### Reporting Issues
-
-When reporting issues, include:
-1. Full error message and stack trace
-2. Screenshot from `screenshots/` folder
-3. Relevant log output
-4. Test data row that failed
-5. Chrome and ChromeDriver versions
-
 ### Code Modifications
 
 Key areas for customization:
@@ -465,27 +441,7 @@ DOWNLOAD_WAIT = 30
 - `fill_details_modal()`
 - `fill_step1_customize()`
 - etc.
-
-## 📄 License
-
-This project is for internal testing purposes. Ensure compliance with Axis Max Life's terms of service when using automated tools on their portal.
-
-## 🔗 Related Files
-
-- **[FIXES_APPLIED.md](FIXES_APPLIED.md)**: Detailed documentation of recent bug fixes
-- **[implementation_plan.md](implementation_plan.md)**: Technical implementation details and portal flow
-- **[axis_max_life_automation.py](axis_max_life_automation.py)**: Main automation script
-- **[check_excel.py](check_excel.py)**: Excel validation utility
-- **[test_parse.py](test_parse.py)**: Life cover parsing test utility
-
-## 📞 Support
-
-For questions or issues:
-1. Check the [Troubleshooting](#troubleshooting) section
-2. Review `FIXES_APPLIED.md` for known issues
-3. Enable DEBUG logging for detailed diagnostics
-4. Check screenshots in `screenshots/` folder
-
+  
 ---
 
 **Last Updated**: May 11, 2026  
